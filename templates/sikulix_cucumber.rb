@@ -42,7 +42,7 @@ class SikulixCucumber
 
     puts 'cucumber tmpdir: ' + @tmpdir
 
-    [FEATURE_DIR, STEP_DEFS_DIR].each do |dir|
+    [FEATURE_DIR, STEP_DEFS_DIR, SUPPORT_DIR].each do |dir|
       Dir.mkdir @tmpdir + dir unless Dir.exist? @tmpdir + dir
     end
 
