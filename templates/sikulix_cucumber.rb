@@ -54,6 +54,13 @@ class SikulixCucumber
   end
 end
 
+# cucumber workaround.
+# Cucumber thinks that an output file name argument is IO,
+# if it has the :write method.
+class String
+  undef_method :write if String.respond_to? :write
+end
+
 def SikulixCucumber(&block)
   SikulixCucumber.new.cucumber_test(&block)
 end
