@@ -10,9 +10,13 @@ You can use our templates for:
 * [Cucumber](templates/sikulix_cucumber.rb)
 
 Or look at simple examples of SikuliX project for testing LibreOffice Writer with:
+
 *[RSpec](examples/libreoffice-writer-test/test-rspec.sikuli)
+
 ![RSpec](doc/pics/rspec_example.png)
+
 *[Cucumber](examples/libreoffice-writer-test/test-cucumber.sikuli)
+
 ![Cucumber](doc/pics/cucumber_example.png)
 
 SikuliX with an integrated rspec and cucumber gems support is available in the [Ruby development repository](https://github.com/rssdev10/SikuliX-2014/tree/ruby) or [use assembled jars](https://drive.google.com/folderview?id=0Bwx0cbtdU5K6STg2T0l5UWlIRXc&usp=drive_web).
