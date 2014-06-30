@@ -21,4 +21,6 @@ Or look at simple examples of SikuliX project for testing LibreOffice Writer wit
 
 SikuliX with an integrated rspec and cucumber gems support is available in the [Ruby development repository](https://github.com/rssdev10/SikuliX-2014/tree/ruby) or [use assembled jars](https://drive.google.com/folderview?id=0Bwx0cbtdU5K6STg2T0l5UWlIRXc&usp=drive_web).
 
+sikulix.gem for running SikuliX with an external JRuby now available at [https://launchpad.net/sikuli/](https://launchpad.net/sikuli/).
+
 We are welcome to develop any other DSL use cases or it SikuliX IDE native support development.
