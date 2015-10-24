@@ -1,4 +1,9 @@
 require 'rspec'
+# Code for using methods such as 'describe'
+# in global scope
+RSpec.configure do |c|
+  c.expose_dsl_globally = true
+end
 
 # ************************** RSpec test example ********************************
 # describe 'Image' do
@@ -13,13 +18,11 @@ require 'rspec'
 # *********************** end of RSpec test example ****************************
 
 # ******************** code for running RSpec from IDE *************************
-RSpec::Core::Runner.instance_variable_set '@autorun_disabled', true
 
 config_options = RSpec::Core::ConfigurationOptions.new [
   '--format', 'j', '--out', 'rspec_result.json',
   '--format', 'h', '--out', 'rspec_result.html',
-  '--format', 'progress'
+  '--format', 'progress',
 ]
 
-config_options.parse_options
-RSpec::Core::CommandLine.new(config_options, RSpec.configuration, RSpec.world).run(STDERR, STDOUT)
+RSpec::Core::Runner.new(config_options).run(STDERR, STDOUT)
